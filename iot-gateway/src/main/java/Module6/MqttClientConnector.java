@@ -109,7 +109,7 @@ public class MqttClientConnector implements MqttCallback
 			_Logger.log(Level.SEVERE, "Failed to publish MQTT message: " + e.getMessage());
 		}
 		return success;
-		}
+	}
 	public boolean subscribeToAll()
 	{
 		try {
@@ -167,5 +167,6 @@ public class MqttClientConnector implements MqttCallback
 	{
 		_Logger.info("Message arrived: " + data + ", " + msg.getId() + ", " + "\"" + msg + "\"");
 	}
+	
 }
 

@@ -36,7 +36,7 @@ public class MqttPubClientTestApp {
 	* 2) If this is the publish app, publish a test message to the given topic
 	*/
 	public void start()
-		{
+	{
 		_mqttClient = new MqttClientConnector("iot.eclipse.org", "tcp",  1883, false);
 		_mqttClient.connect();
 		String topicName = "SensorData";
